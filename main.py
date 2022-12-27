@@ -1,5 +1,5 @@
 from random import randint
-from graphic_arts import start_game_banner
+from graphic_arts.start_game_banner import run_screensaver
 
 def attack(char_name: str, char_class: str) -> str:
     """Funktion attact."""
@@ -82,6 +82,7 @@ def choice_char_class() -> str:
                                'чтобы выбрать другого персонажа ').lower()
     return char_class
 
+main()
 
 if __name__ == 'main':
     print('Приветствую тебя, искатель приключений!')
@@ -93,3 +94,4 @@ if __name__ == 'main':
     print('Воитель, Маг, Лекарь')
     char_class: str = choice_char_class()
     print(start_training(char_name, char_class))
+
