@@ -7,7 +7,7 @@ DEFAULT_STAMINA = 80
 
 class Character:
 
-    BRIEF_DEESC_CHAR_CLASS = 'отважный любитель приключений'
+    BRIEF_DESC_CHAR_CLASS = 'отважный любитель приключений'
     RANGE_VALUE_ATTACK = (1, 3)
     RANGE_VALUE_DEFENCE = (1, 5)
     SPECIAL_BUFF = 15
@@ -113,7 +113,7 @@ def start_training(character):
     return 'Тренировка окончена.'
 
 
-def main():
+if __name__ == 'main':
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
     char_name: str = input('...назови себя: ')
@@ -125,4 +125,3 @@ def main():
     print(start_training(char_name, char_class))
 
 
-main()
